@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Registrar">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="411dp"
+            android:layout_height="59dp"
+            android:background="@color/blue"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <ImageView
+                android:id="@+id/btnatras"
+                android:layout_width="35dp"
+                android:layout_height="41dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/flecha" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:text="Registrar Contacto"
+                android:textColor="@color/white"
+                android:textSize="22dp" />
+
+            <ImageView
+                android:id="@+id/btnsave"
+                android:layout_width="34dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="110dp"
+                android:src="@drawable/save"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edtnombre"
+            android:layout_width="342dp"
+            android:layout_height="49dp"
+            android:ems="10"
+            android:hint="Nombre*"
+            android:inputType="textPersonName"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.131" />
+
+        <EditText
+            android:id="@+id/edtapellido_paterno"
+            android:layout_width="342dp"
+            android:layout_height="49dp"
+            android:ems="10"
+            android:hint="Apellido paterno*"
+            android:inputType="textPersonName"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.233" />
+
+        <EditText
+            android:id="@+id/edtapellido_materno"
+            android:layout_width="342dp"
+            android:layout_height="49dp"
+            android:ems="10"
+            android:hint="Apellido materno*"
+            android:inputType="textPersonName"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.34" />
+
+        <EditText
+            android:id="@+id/edtcorreo"
+            android:layout_width="342dp"
+            android:layout_height="49dp"
+            android:ems="10"
+            android:hint="Correo*"
+            android:inputType="textEmailAddress"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.438" />
+
+        <EditText
+            android:id="@+id/edtdireccion"
+            android:layout_width="342dp"
+            android:layout_height="49dp"
+            android:ems="10"
+            android:hint="Direccion"
+            android:inputType="textPersonName"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.543" />
+
+        <EditText
+            android:id="@+id/edtfecha_nacimiento"
+            android:layout_width="342dp"
+            android:layout_height="49dp"
+            android:ems="10"
+            android:hint="Fecha nacimiento"
+            android:inputType="date"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.651" />
+
+        <EditText
+            android:id="@+id/edtNumerotel"
+            android:layout_width="342dp"
+            android:layout_height="49dp"
+            android:ems="10"
+            android:hint="Numero Celular*"
+            android:inputType="phone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.752" />
+
+        <EditText
+            android:id="@+id/edtNumerocas"
+            android:layout_width="342dp"
+            android:layout_height="49dp"
+            android:ems="10"
+            android:hint="Numero Casa"
+            android:inputType="phone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.854" />
+
+        <EditText
+            android:id="@+id/edtNumeroTrabajo"
+            android:layout_width="342dp"
+            android:layout_height="49dp"
+            android:ems="10"
+            android:hint="Numero Trabajo"
+            android:inputType="phone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.956" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
